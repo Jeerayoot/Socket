@@ -15,7 +15,7 @@ server.on('connection', function (socket) {
 
     socket.on('data', function (data) {
         console.log('DATA FROM %s : %s'.cyan, socket.remoteAddress, data);
-        const options = {
+        /*const options = {
             url: 'https://fillup.stpi.co.th/api/socket/' + data,
             method: 'POST',
             headers: {
@@ -28,7 +28,10 @@ server.on('connection', function (socket) {
         request(options, function (err, res, body) {
             let json = JSON.stringify(body);
             socket.write(JSON.parse(json));
-        });
+        });*/
+
+        socket.write('002460100190090810001C000002000000100022080218083030');
+
     });
 
     socket.on('error', function (err) {
