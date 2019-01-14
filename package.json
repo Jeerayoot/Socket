@@ -1,15 +1,18 @@
 {
-  "name": "testwebsocket3",
+  "name": "ws",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "dependencies": {
+    "request": "^2.88.0",
+    "ws": "^6.1.2"
+  },
+  "devDependencies": {},
   "scripts": {
     "start": "node server.js",
+    
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "url": "^0.11.0"
-  }
+  "license": "ISC"
 }
